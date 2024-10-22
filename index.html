@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío de Cultura General - Reclutamiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 600px;   
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label, p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reclutamiento Interactivo</h1>
+
+    <form id="quizForm" action="submit.php" method="post">
+        <label for="name">Ingresa tu nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <p>1. ¿Cuál es la capital de Chile?</p>
+        <input type="radio" name="q1" value="0"> Valparaíso<br>
+        <input type="radio" name="q1" value="1"> Santiago<br>
+        <input type="radio" name="q1" value="0"> Concepción<br>
+        <input type="radio" name="q1" value="0"> Antofagasta<br> 
+
+        <p>2. ¿En qué año se celebró el Bicentenario de Chile?</p>
+        <input type="radio" name="q2" value="0"> 2006<br>
+        <input type="radio" name="q2" value="0"> 2008<br>
+        <input type="radio" name="q2" value="1"> 2010<br>
+        <input type="radio" name="q2" value="0"> 2012<br>
+
+        <p>3. ¿Cuál es el plato típico chileno conocido como “empanada”?</p>
+        <input type="radio" name="q3" value="1"> Empanada de pino<br>
+        <input type="radio" name="q3" value="0"> Pastel de choclo<br>
+        <input type="radio" name="q3" value="0"> Asado de tira<br>
+        <input type="radio" name="q3" value="0"> Cazuela<br>
+
+        <p>4. ¿Qué océano bordea las costas de Chile?</p>
+        <input type="radio" name="q4" value="1"> Océano Pacífico<br>
+        <input type="radio" name="q4" value="0"> Océano Atlántico<br>
+        <input type="radio" name="q4" value="0"> Océano Índico<br>
+        <input type="radio" name="q4" value="0"> Océano Ártico<br>
+
+        <p>5. ¿Qué desierto se encuentra en el norte de Chile?</p>
+        <input type="radio" name="q5" value="1"> Desierto de Atacama<br>
+        <input type="radio" name="q5" value="0"> Desierto de Mojave<br>
+        <input type="radio" name="q5" value="0"> Desierto de Kalahari<br>
+        <input type="radio" name="q5" value="0"> Desierto de Gobi<br>
+
+        <button type="submit">Enviar respuestas</button>
+    </form>
+    </table>
+
+</body>
+</html>
